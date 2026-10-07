@@ -1,0 +1,22 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const phone = '+17725550199';
+const phoneDisplay = '(772) 555-0199';
+---
+<Layout title="High Humidity & Mold in Fort Pierce, FL" description="High indoor humidity fuels mold growth in Florida homes. Control moisture to prevent problems in Fort Pierce.">
+  <section class="page-hero">
+    <div class="container">
+      <h1>High Humidity</h1>
+      <p>High indoor humidity fuels mold. Control moisture to prevent problems.</p>
+      <a href={`tel:${phone}`} class="btn btn-primary" style="margin-top:1.25rem">Call {phoneDisplay}</a>
+    </div>
+  </section>
+  <section class="content-section">
+    <div class="container" style="max-width:800px">
+      <h2>Humidity Is Mold’s Best Friend</h2>
+      <p>Indoor relative humidity above about 60% encourages mold. In Fort Pierce’s climate, air conditioning, dehumidifiers, and good ventilation are essential.</p>
+      <p>We can assess moisture conditions and recommend practical steps to keep your indoor environment less hospitable to mold.</p>
+      <p style="margin-top:2rem"><a href={`tel:${phone}`} class="btn btn-primary">Call Now — {phoneDisplay}</a></p>
+    </div>
+  </section>
+</Layout>

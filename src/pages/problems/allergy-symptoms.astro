@@ -1,0 +1,22 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const phone = '+17725550199';
+const phoneDisplay = '(772) 555-0199';
+---
+<Layout title="Mold-Related Allergy & Health Symptoms | Fort Pierce" description="Sneezing, coughing, or irritation that improves when you leave home may be linked to indoor mold. Get assessed in Fort Pierce.">
+  <section class="page-hero">
+    <div class="container">
+      <h1>Allergy &amp; Health Symptoms</h1>
+      <p>Symptoms that improve when you leave home may be linked to indoor mold.</p>
+      <a href={`tel:${phone}`} class="btn btn-primary" style="margin-top:1.25rem">Call {phoneDisplay}</a>
+    </div>
+  </section>
+  <section class="content-section">
+    <div class="container" style="max-width:800px">
+      <h2>Is Your Indoor Air Making You Sick?</h2>
+      <p>Mold can trigger or worsen allergy and asthma symptoms. If symptoms ease when you are away from the property, indoor mold is worth investigating.</p>
+      <p>We perform inspections and testing to help identify whether mold is a contributing factor and what to do next.</p>
+      <p style="margin-top:2rem"><a href={`tel:${phone}`} class="btn btn-primary">Call Now — {phoneDisplay}</a></p>
+    </div>
+  </section>
+</Layout>

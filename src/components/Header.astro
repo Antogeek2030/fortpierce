@@ -1,0 +1,73 @@
+---
+const phone = '+17725550199';
+const phoneDisplay = '(772) 555-0199';
+const currentPath = Astro.url.pathname;
+---
+<header class="header">
+  <div class="container header-inner">
+    <a href="/" class="logo">
+      <span class="logo-icon">🌿</span>
+      <span class="logo-text">Fort Pierce Mold<br /><small>Specialists</small></span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="/" class={currentPath === '/' || currentPath === '' ? 'active' : ''}>Home</a>
+
+      <div class="dropdown">
+        <button class="dropdown-toggle" aria-expanded="false">Our Services <span class="caret">▾</span></button>
+        <div class="dropdown-menu">
+          <a href="/services/mold-inspection/">Mold Inspection &amp; Testing</a>
+          <a href="/services/mold-remediation/">Mold Remediation</a>
+          <a href="/services/mold-removal/">Mold Removal</a>
+          <a href="/services/water-damage-mold/">Water Damage &amp; Mold</a>
+          <a href="/services/air-quality-testing/">Air Quality Testing</a>
+          <a href="/services/prevention-maintenance/">Prevention &amp; Maintenance</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropdown-toggle" aria-expanded="false">Problems <span class="caret">▾</span></button>
+        <div class="dropdown-menu">
+          <a href="/problems/visible-mold/">Visible Mold Growth</a>
+          <a href="/problems/musty-odors/">Musty Odors</a>
+          <a href="/problems/water-damage/">Water Damage &amp; Leaks</a>
+          <a href="/problems/allergy-symptoms/">Allergy &amp; Health Symptoms</a>
+          <a href="/problems/high-humidity/">High Humidity</a>
+          <a href="/problems/black-mold/">Black Mold Concerns</a>
+        </div>
+      </div>
+
+      <a href="/service-areas/">Service Areas</a>
+      <a href="/about/">About Us</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+
+    <a href={`tel:${phone}`} class="header-phone">
+      <span>📞</span>
+      <span class="phone-text">{phoneDisplay}</span>
+    </a>
+    <button class="mobile-toggle" id="menuBtn" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<script>
+  const btn = document.getElementById('menuBtn');
+  const nav = document.getElementById('nav');
+  btn?.addEventListener('click', () => nav?.classList.toggle('open'));
+
+  document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+    toggle.addEventListener('click', (e) => {
+      e.preventDefault();
+      const parent = toggle.closest('.dropdown');
+      const isOpen = parent?.classList.contains('open');
+      document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('open'));
+      if (!isOpen) parent?.classList.add('open');
+    });
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!(e.target as Element).closest('.dropdown')) {
+      document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('open'));
+    }
+  });
+</script>

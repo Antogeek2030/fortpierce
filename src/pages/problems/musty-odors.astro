@@ -1,0 +1,22 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const phone = '+17725550199';
+const phoneDisplay = '(772) 555-0199';
+---
+<Layout title="Musty Odors & Hidden Mold in Fort Pierce, FL" description="Persistent musty smells in your Fort Pierce home often mean hidden mold. Professional inspection finds the source.">
+  <section class="page-hero">
+    <div class="container">
+      <h1>Musty Odors</h1>
+      <p>Persistent musty smells often mean hidden mold. Professional inspection finds the source.</p>
+      <a href={`tel:${phone}`} class="btn btn-primary" style="margin-top:1.25rem">Call {phoneDisplay}</a>
+    </div>
+  </section>
+  <section class="content-section">
+    <div class="container" style="max-width:800px">
+      <h2>When Smell Is the Only Clue</h2>
+      <p>A musty, earthy, or damp odor that does not go away with cleaning frequently indicates mold behind walls, under flooring, in attics, or inside ductwork.</p>
+      <p>We use moisture tools and targeted inspection to locate the source and recommend the right remediation plan.</p>
+      <p style="margin-top:2rem"><a href={`tel:${phone}`} class="btn btn-primary">Call Now — {phoneDisplay}</a></p>
+    </div>
+  </section>
+</Layout>

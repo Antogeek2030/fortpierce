@@ -1,0 +1,24 @@
+---
+import Layout from '../layouts/Layout.astro';
+const phone = '+17725550199';
+const phoneDisplay = '(772) 555-0199';
+---
+<Layout title="Contact | Fort Pierce Mold Specialists" description="Contact Fort Pierce Mold Specialists for mold inspection and remediation. Call (772) 555-0199. 3706 Okeechobee Rd, Fort Pierce, FL 34947.">
+  <section class="page-hero">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>Ready for an inspection or have questions? We’re here to help.</p>
+    </div>
+  </section>
+  <section class="content-section">
+    <div class="container" style="max-width:800px">
+      <h2>Get in Touch</h2>
+      <p><strong>Phone:</strong> <a href={`tel:${phone}`}>{phoneDisplay}</a></p>
+      <p><strong>Address:</strong> 3706 Okeechobee Rd, Fort Pierce, FL 34947, USA</p>
+      <p><strong>Hours:</strong> 24/7 emergency availability for urgent mold and water-related calls</p>
+      <h2>What to Expect When You Call</h2>
+      <p>Tell us what you’re seeing or smelling and where. We’ll help determine whether an inspection is needed and schedule as soon as possible — often the same day.</p>
+      <p style="margin-top:2rem"><a href={`tel:${phone}`} class="btn btn-primary">Call Now — {phoneDisplay}</a></p>
+    </div>
+  </section>
+</Layout>

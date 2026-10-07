@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Layout.astro';
+const phone = '+17725550199';
+const phoneDisplay = '(772) 555-0199';
+---
+<Layout title="About Us | Fort Pierce Mold Specialists" description="Learn about Fort Pierce Mold Specialists — licensed mold inspection, testing, and remediation serving St. Lucie County.">
+  <section class="page-hero">
+    <div class="container">
+      <h1>About Fort Pierce Mold Specialists</h1>
+      <p>Local expertise. Clear communication. Clean results.</p>
+    </div>
+  </section>
+  <section class="content-section">
+    <div class="container" style="max-width:800px">
+      <h2>Your Local Mold Team</h2>
+      <p>Fort Pierce Mold Specialists provides professional mold inspection, testing, and remediation for homes and businesses across Fort Pierce and St. Lucie County. We understand Florida’s humidity, coastal properties, and the importance of responding quickly when mold appears.</p>
+      <h2>What Sets Us Apart</h2>
+      <ul>
+        <li>Same-day and emergency response when needed</li>
+        <li>Licensed and insured technicians</li>
+        <li>Upfront written estimates — no surprises</li>
+        <li>Proper containment and industry-aligned protocols</li>
+        <li>Focus on solving the moisture source, not just the symptoms</li>
+      </ul>
+      <h2>Our Location</h2>
+      <p>3706 Okeechobee Rd, Fort Pierce, FL 34947</p>
+      <p>We proudly serve Fort Pierce, Port St. Lucie, Hutchinson Island, Lakewood Park, White City, Indian River Estates, and surrounding communities.</p>
+      <p style="margin-top:2rem"><a href={`tel:${phone}`} class="btn btn-primary">Call {phoneDisplay}</a></p>
+    </div>
+  </section>
+</Layout>

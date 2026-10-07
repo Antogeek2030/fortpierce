@@ -1,0 +1,38 @@
+---
+const phone = '+17725550199';
+const phoneDisplay = '(772) 555-0199';
+---
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>Fort Pierce Mold Specialists</h3>
+        <p>Licensed mold inspection, testing, and remediation serving Fort Pierce and St. Lucie County. Fast response. Honest pricing. Clean results.</p>
+        <a href={`tel:${phone}`}>📞 {phoneDisplay}</a>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <a href="/services/mold-inspection/">Mold Inspection</a>
+        <a href="/services/mold-remediation/">Mold Remediation</a>
+        <a href="/services/mold-removal/">Mold Removal</a>
+        <a href="/services/water-damage-mold/">Water Damage &amp; Mold</a>
+        <a href="/services/air-quality-testing/">Air Quality Testing</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="/about/">About Us</a>
+        <a href="/service-areas/">Service Areas</a>
+        <a href="/contact/">Contact</a>
+        <a href="/privacy/">Privacy Policy</a>
+      </div>
+      <div>
+        <h4>Location</h4>
+        <p style="font-size:0.9rem;opacity:0.85;line-height:1.5;">3706 Okeechobee Rd<br />Fort Pierce, FL 34947<br />St. Lucie County</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© {new Date().getFullYear()} Fort Pierce Mold Specialists. All rights reserved.</span>
+      <span>Licensed · Insured · Serving Fort Pierce &amp; St. Lucie County</span>
+    </div>
+  </div>
+</footer>

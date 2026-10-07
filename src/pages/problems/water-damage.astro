@@ -1,0 +1,22 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const phone = '+17725550199';
+const phoneDisplay = '(772) 555-0199';
+---
+<Layout title="Water Damage & Mold Risk in Fort Pierce, FL" description="Water damage from leaks or storms can lead to mold in 24–48 hours. Fast response in Fort Pierce protects your property.">
+  <section class="page-hero">
+    <div class="container">
+      <h1>Water Damage &amp; Leaks</h1>
+      <p>Water damage from leaks or storms can lead to mold quickly. Fast response protects your property.</p>
+      <a href={`tel:${phone}`} class="btn btn-primary" style="margin-top:1.25rem">Call {phoneDisplay}</a>
+    </div>
+  </section>
+  <section class="content-section">
+    <div class="container" style="max-width:800px">
+      <h2>Act Fast After Water Intrusion</h2>
+      <p>Roof leaks, pipe bursts, appliance failures, and storm flooding create ideal conditions for mold. The longer materials stay wet, the greater the risk.</p>
+      <p>We help identify the moisture source, support drying, and remediate any mold that has already started.</p>
+      <p style="margin-top:2rem"><a href={`tel:${phone}`} class="btn btn-primary">Call Now — {phoneDisplay}</a></p>
+    </div>
+  </section>
+</Layout>
